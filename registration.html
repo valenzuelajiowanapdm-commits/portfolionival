@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+
+<header style="background-color: aqua; text-align:center; padding: 10px;">
+
+    <h1>Registration Form</h1>
+    <h6> Welcome to my Website </h6>
+
+</header>
+
+<nav style="background-color: aquamarine; display:flex; justify-content:center; gap: 50px; padding: 10px;">
+
+    <a href="home1.html">Home</a>
+    <a href="registration.html">Registration Form</a>
+    <a href="grade.html">Grade Table</a>
+    <a href="profile.html">My Profile</a>
+
+
+</nav>
+
+    <form >
+
+        First name:  <input type="text" name="first_name" />
+        <br>
+        Last name:  <input type="text" name="last_name" />
+
+    </form>
+
+    <br>
+
+    <form >
+
+        User ID :  <input type="text" name="user_id" />
+        <br>
+        Password:  <input type="password" name="password" />
+
+    </form>
+
+    <br>
+
+    <form>
+
+        Description : <br />
+        <textarea rows="5" cols="20" name="description" placeholder=” Enter description here...”></textarea>
+
+    </form>
+
+    <br>
+
+    <form>
+
+        <input type="radio" name="subject" value="maths"> Maths
+        <input type="radio" name="subject" value="physics"> Physics
+
+    </form>
+
+    <br>
+
+    <form>
+
+        <select name="dropdown">
+        <option value="Maths" selected>Maths</option>
+        <option value="Physics">Physics</option>
+        </select>
+
+    </form>
+           
+    <br>
+        
+    <form>
+
+        <input type="file" name="fileupload" accept="image/*" />
+
+    </form>
+
+    <br>
+                
+    <form>
+        <input type="submit" name="submit" value="Submit" />
+        <input type="reset" name="reset"  value="Reset" />
+        <input type="button" name="ok" value="OK"  />
+        <input type="image" name="imagebutton" src="/html/images/logo.png" />
+    </form>
+
+    <br>
+
+    <form>
+
+        <input type="checkbox" name="maths" value="on"> Maths
+        <input type="checkbox" name="physics" value="on"> Physics
+
+    </form>
+        
+                    
+     
+</body>
+</html>

@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f3e5f5;
+    color: #4a148c;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    background: #4a148c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    gap: 50px;
+}
+
+.logo {
+    color: #ce93d8;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #faf3fb;
+    padding: 10px 18px;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #c50aa9;
+    color: #ffffff;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    min-height: 100vh;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 65px;
+    color: #4a148c;
+}
+
+.hero-text p {
+    margin: 30px 0;
+    font-size: 22px;
+    line-height: 1.6;
+    color: #6a1b9a;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 50%;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 20px;
+    background: #4a148c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #6a1b9a;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 80px 60px;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #4a148c;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6a1b9a;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 220px;
+    background: #4a148c;
+    color: #ce93d8;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.card h3 {
+    color: #faf9fb;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #ce93d8;
+    font-size: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #d71ca2;
+    color: #ffffff;
+}
+
+.card:hover h3,
+.card:hover p {
+    color: #ffffff;
+}
+
+.card i {
+    font-size: 50px;
+    color: #ce93d8;
+    margin-bottom: 20px;
+}
+
+#contact h3 {
+    margin-bottom: 10px;
+    color: #6a1b9a;
+    font-size: 20px;
+}
+
+footer {
+    background: #4a148c;
+    text-align: center;
+    padding: 20px;
+    color: #ce93d8;
+    font-weight: bold;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #4a148c;
+    color: white;
+    border: none;
+    padding: 14px 16px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    transition: .3s;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.back-to-top:hover {
+    background: #6a1b9a;
+    transform: scale(1.1);
+}

@@ -1,0 +1,81 @@
+*{
+    margin: 10px;
+    padding: 0px;  
+    box-sizing: border-box;  
+}
+
+.foot{
+    padding: 10px ;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(241, 130, 241);
+}
+
+.header{
+    margin-top: 10px;
+    background-color: rgb(241, 130, 241);
+    text-align: center;
+    padding: 50px;
+}
+
+.page{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: palevioletred;
+    text-align: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.all{
+    display: flex;
+}
+
+.section{
+    background-color: rgb(238, 198, 150);
+    flex: 3;
+    border-radius: 10px;
+}
+
+.side{
+    background-color: rgb(176, 223, 132);
+    flex: 1;
+    border-radius: 10px;
+}
+
+.form{
+    margin-top: 20px;
+    background-color: beige;
+    padding: 0px;
+    align-items: center;   
+}
+
+.grade{
+    background-color: beige;
+    border-radius: 20px;
+}
+
+.table{
+    width: 500px;
+    height: 250px;
+    border: 2px solid;
+    text-align: center;
+}
+
+.title{
+    align-items: center;
+}
+
+input[type="text"]{
+    width: 100px;
+}
+
+.pi{
+    display: flex;
+
+}
+
+th{
+    background-color: aqua;
+}
