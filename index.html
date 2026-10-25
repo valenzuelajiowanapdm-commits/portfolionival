@@ -1,19 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+
+    <meta name="theme-color" content="#4a148c">
+    <meta name="description" content="Jiowana F. Valenzuela's BSIT student portfolio at PDM.">
+
+    <title>My Portfolio | Jiowana F. Valenzuela</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
+
+    <!-- HEADER -->
     <header>
-        <div class="logo">
+        <a href="#home" class="logo">
             <h2>MY PORTFOLIO</h2>
             <p>As a BSIT student in PDM</p>
-        </div>
-        <nav>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNav">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="mainNav">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Laboratory Activities</a>
@@ -22,100 +41,160 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Hello Everyone!</h1>
-            <p>Online Portfolio for BS Information Technology.</p>
-            <a href="#subjects" class="btn">View My Fav Subjects</a>
-        </div>
-        <div class="hero-image">
-            <img src="jio.jpg" alt="PDM Logo Illustration">
-        </div>
-    </section>
+    <main>
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Hello Everyone!</h1>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an Information technology student who enjoys building websites using HTML, CSS, and JavaScript. I am continuously improving my web development skills and learning new technologies.</p>
-    </section>
+                <p>
+                    Online Portfolio for BS Information Technology.
+                </p>
 
-   <section id="skills">
+                <a href="#subjects" class="btn">
+                    View My Fav Subjects
+                </a>
+            </div>
 
-        <h2>Laboratory Activities</h2>
+            <div class="hero-image">
+                <img src="jio.jpg" alt="Portfolio profile image">
+            </div>
+        </section>
 
-        <div class="cards">
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About Me</h2>
 
-            <article class="card">
-                <h3>Laboratory Activity 1</h3>
-                <p>Purely HTML code.</p>
-                <a href="home.html">Check</a>
-            </article>
+            <p class="about-text">
+                I am an Information Technology student who enjoys building
+                websites using HTML, CSS, and JavaScript. I am continuously
+                improving my web development skills and learning new technologies.
+            </p>
+        </section>
 
-            <article class="card">
-                <h3>Laboratory Activity 2</h3>
-                <p>Website with forms and tables created using HTML and CSS.</p>
-                <a href="home1.html">Check</a>
-            </article>
+        <!-- LABORATORY ACTIVITIES -->
+        <section id="skills">
+            <h2>Laboratory Activities</h2>
 
-            <article class="card">
-                <h3>Laboratory Activity 3</h3>
-                <p>Introduction to transitions and external CSS.</p>
-                <a href="home2.html">Check</a>
-            </article>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Laboratory Activity 1</h3>
+                    <p>Purely HTML code.</p>
+                    <a href="home.html" class="card-link">Check</a>
+                </article>
 
-            <article class="card">
-                <h3>Laboratory Activity 4</h3>
-                <p>Simple Responsive Landing Page</p>
-                <a href="index2.html">Check</a>
-            </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-table-list"></i>
+                    </div>
+                    <h3>Laboratory Activity 2</h3>
+                    <p>Website with forms and tables created using HTML and CSS.</p>
+                    <a href="home1.html" class="card-link">Check</a>
+                </article>
 
-            <article class="card">
-                <h3>Laboratory Activity 5</h3>
-                <p>Simple Responsive Landing Page with a short JavaScript.</p>
-                <a href="sample1.html">Check</a>
-            </article>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>Laboratory Activity 3</h3>
+                    <p>Introduction to transitions and external CSS.</p>
+                    <a href="home2.html" class="card-link">Check</a>
+                </article>
 
-            <article class="card">
-                <h3>Laboratory Activity 6</h3>
-                <p>Simple Responsive Landing Page with continuation of JavaScript.</p>
-                <a href="index1.html">Check</a>
-            </article>
-        </div>
-    </section>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3>Laboratory Activity 4</h3>
+                    <p>Simple Responsive Landing Page.</p>
+                    <a href="index2.html" class="card-link">Check</a>
+                </article>
 
-    <section id="subjects">
-        <h2>My Favorite Subjects</h2>
-        <div class="cards">
-            <article class="card">
-                <h3>EDOOP</h3>
-                <p>I Genuinely Love Python.</p>
-            </article>
-            <article class="card">
-                <h3>OOP</h3>
-                <p> Love C# that use for designing.</p>
-            </article>
-            <article class="card">
-                <h3>IntProg</h3>
-                <p>Another designing User Interface.</p>
-            </article>
-            <article class="card">
-                <h3>Alegbra</h3>
-                <p>I love Math even with struggles.</p>
-            </article>
-        </div>
-    </section>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h3>Laboratory Activity 5</h3>
+                    <p>Simple Responsive Landing Page with a short JavaScript.</p>
+                    <a href="sample1.html" class="card-link">Check</a>
+                </article>
 
-    <section id="contact">
-        <h2>Student Information</h2>
-        <h3><strong>Name: </strong>Jiowana F. Valenzuela</h3>
-        <h3><strong>Section: </strong>BSIT31A</h3>
-        <h3><strong>Student Number: </strong>PDM 2024-003709</h3>
-    </section>
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>Laboratory Activity 6</h3>
+                    <p>Simple Responsive Landing Page with continuation of JavaScript.</p>
+                    <a href="index1.html" class="card-link">Check</a>
+                </article>
+            </div>
+        </section>
 
+        <!-- FAVORITE SUBJECTS -->
+        <section id="subjects">
+            <h2>My Favorite Subjects</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h3>EDOOP</h3>
+                    <p>I genuinely love Python.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>OOP</h3>
+                    <p>I love C# that I use for designing.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3>IntProg</h3>
+                    <p>Another subject for designing user interfaces.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3>Algebra</h3>
+                    <p>I love Math even with struggles.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- STUDENT INFORMATION -->
+        <section id="contact">
+            <h2>Student Information</h2>
+
+            <div class="student-info">
+                <h3><strong>Name:</strong> Jiowana F. Valenzuela</h3>
+                <h3><strong>Section:</strong> BSIT31A</h3>
+                <h3><strong>Student Number:</strong> PDM 2024-003709</h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy;2026 Jio's PDM Portfolio. All rights reserved.</p>
+        <p>&copy; <span id="currentYear">2026</span>
+            Jio's PDM Portfolio. All rights reserved.</p>
     </footer>
 
-    <button class="back-to-top" id="backToTop" title="Back to Top">
+    <!-- BACK TO TOP -->
+    <button class="back-to-top"
+            id="backToTop"
+            title="Back to Top"
+            aria-label="Back to Top">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
